@@ -1,4 +1,4 @@
-// test23
+// abc1
 
 <!doctype html>
 <html>
@@ -157,14 +157,14 @@ function profile () {
                     CARD EVENT LISTENERS
   ---------------------------------------------------------- */
   /* --------------- hover & unhover the card ---------------*/
-  var makeGitterChat =
-      bel`
+ function makeGitterChat(username) =
+       return bel`
     <div class=${css.cardContainer_hover}>
       <div class=${css.cardGitterChat} ><iframe class=${css.iframe} src=${ makeLinkUrl (username)}></iframe></div>
       `
   
   var cardContainer_hover =
-      
+      ${makeGitterChat(username) }
       bel`
     <div class=${css.cardContainer_hover}>      
       <div class=${css.cardSocial}>
