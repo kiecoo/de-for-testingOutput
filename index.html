@@ -10,7 +10,7 @@
   <body>
     <script>
    
-var makeLinkUrl = require('./index.js')   
+var makeGitterChat = require('./index.js')   
 var bel = require('bel')
 var csjs = require('csjs-inject')
   
@@ -157,12 +157,7 @@ function profile () {
                     CARD EVENT LISTENERS
   ---------------------------------------------------------- */
   /* --------------- hover & unhover the card ---------------*/
- function makeGitterChat(username){
-       return bel`
-   
-      <div class=${css.cardGitterChat} ><iframe class=${css.iframe} src=${ makeLinkUrl (username)}></iframe></div>
-      `
- }
+
   
   var cardContainer_hover =
       bel`
