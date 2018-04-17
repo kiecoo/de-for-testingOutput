@@ -1,4 +1,4 @@
-// abc1
+// abc123
 
 <!doctype html>
 <html>
@@ -164,8 +164,9 @@ function profile () {
       `
   
   var cardContainer_hover =
-      ${makeGitterChat(username) }
       bel`
+     ${makeGitterChat(username) }
+
     <div class=${css.cardContainer_hover}>      
       <div class=${css.cardSocial}>
         <a href=${twitter} target='_blank'>
@@ -182,12 +183,12 @@ function profile () {
   `
 
   function hoverCard (event) {
-    el.appendChild(makeGitterChat)
+   
     el.appendChild(cardContainer_hover)
     el.removeChild(cardContainer)
   }
   function unhoverCard (event) {
-    el.removeChild(makeGitterChat)
+ 
     el.removeChild(cardContainer_hover)
     el.appendChild(cardContainer)
   }
