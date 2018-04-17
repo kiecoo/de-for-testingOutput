@@ -1,4 +1,4 @@
-// 1234
+
 
 <!doctype html>
 <html>
@@ -158,18 +158,15 @@ function profile () {
   ---------------------------------------------------------- */
   /* --------------- hover & unhover the card ---------------*/
  function makeGitterChat(username){
-       return bel`
-   
+       return bel` 
       <div class=${css.cardGitterChat} ><iframe class=${css.iframe} src=${ makeLinkUrl (username)}></iframe></div>
-      `
+    `
  }
   
   var cardContainer_hover =
       bel`
-    
     <div class=${css.cardContainer_hover}>    
               ${makeGitterChat(username) }
-
       <div class=${css.cardSocial}>
         <a href=${twitter} target='_blank'>
           <i class="${css.cardSocial_fontawesome} fa fa-twitter" aria-hidden="true"></i></a>
