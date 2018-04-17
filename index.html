@@ -157,10 +157,13 @@ function profile () {
                     CARD EVENT LISTENERS
   ---------------------------------------------------------- */
   /* --------------- hover & unhover the card ---------------*/
-  var cardContainer_hover = bel`
+  var cardContainer_hover =
+       bel`
     <div class=${css.cardContainer_hover}>
       <div class=${css.cardGitterChat} ><iframe class=${css.iframe} src=${ gitter}></iframe></div>
-      
+      `
+      bel`
+    <div class=${css.cardContainer_hover}>      
       <div class=${css.cardSocial}>
         <a href=${twitter} target='_blank'>
           <i class="${css.cardSocial_fontawesome} fa fa-twitter" aria-hidden="true"></i></a>
