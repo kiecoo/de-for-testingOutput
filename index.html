@@ -157,11 +157,12 @@ function profile () {
                     CARD EVENT LISTENERS
   ---------------------------------------------------------- */
   /* --------------- hover & unhover the card ---------------*/
- function makeGitterChat(username) =
+ function makeGitterChat(username){
        return bel`
     <div class=${css.cardContainer_hover}>
       <div class=${css.cardGitterChat} ><iframe class=${css.iframe} src=${ makeLinkUrl (username)}></iframe></div>
       `
+ }
   
   var cardContainer_hover =
       bel`
