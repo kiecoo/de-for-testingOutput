@@ -1,4 +1,4 @@
-// test separate
+// test1
 
 <!doctype html>
 <html>
@@ -138,7 +138,7 @@ function profile () {
   var codepen           = `https://codepen.io/${username}`
   
   
-  var gitter           = makeLinkUrl (username)
+  
 // HTML
   var cardContainer = bel`
     <div class=${css.cardContainer}>
@@ -160,7 +160,7 @@ function profile () {
   var cardContainer_hover =
        bel`
     <div class=${css.cardContainer_hover}>
-      <div class=${css.cardGitterChat} ><iframe class=${css.iframe} src=${ gitter}></iframe></div>
+      <div class=${css.cardGitterChat} ><iframe class=${css.iframe} src=${ makeLinkUrl (username)}></iframe></div>
       `
       bel`
     <div class=${css.cardContainer_hover}>      
