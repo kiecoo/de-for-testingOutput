@@ -1,4 +1,4 @@
-//777
+//666
 
 <!doctype html>	
 	<html>
@@ -129,15 +129,23 @@
 	  }
 	`
 	function profile () {
-	  var data= 
+	  var data= [
     {
         "repo": "nicco88/personal-portfolio",
         "url": "https://api.github.com/repos/nicco88/personal-portfolio",
         "username": "ninabreznik",
         "time": "2018-04-01T17:50:29Z"
-    }	
+    },
+    {
+        "repo": "freeCodeCamp/devdocs",
+        "url": "https://api.github.com/repos/freeCodeCamp/devdocs",
+        "username": "serapath",
+        "time": "2018-03-27T04:51:07Z"
+    }]
+	  var ninasProfile      = data[0]
+          var username          = ninasProfile.username
+	  
 	  var name              = 'Nina'
-	  var username          = data.username
 	  var cardText          = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostru '
 	  var imageUrl          = 'https://nomadlist.com/assets/img/cities/phuket-thailand-500px.jpg'
 	  var city              = 'Berlin'
