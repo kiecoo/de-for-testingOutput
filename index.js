@@ -1,8 +1,7 @@
-
+// index.js
   module.exports = getGithubData
 
   function getGithubData () {
-
 		    var data1= [
 		    {
 			"repo": "nicco88/personal-portfolio",
@@ -16,7 +15,5 @@
 			"username": "serapath",
 			"time": "2018-03-27T04:51:07Z"
 		    }]
-
-
 		    return  data1
 	  }
