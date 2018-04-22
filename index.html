@@ -1,5 +1,5 @@
 
-//try
+//test
 <!doctype html>	
 	<html>
 	  <head>
@@ -11,7 +11,7 @@
 	  <body>
 	    <script>
 	   
-	var data = require('./index.js')   
+	var getGithubData = require('./index.js')   
 	var bel = require('bel')
 	var csjs = require('csjs-inject')
 	  
@@ -128,10 +128,10 @@
 	    padding:.1px;
 	  }
 	`
-	function profile (data) {
+	function profile (getGithubData) {
 	 
   
-	  var ninasProfile      = data[0]
+	  var ninasProfile      = getGithubData[0]
           var username          = ninasProfile.username
 	  
 	  var name              = 'Nina'
@@ -193,7 +193,7 @@
 	  return el
 	}
 	 
-	var x= profile(data)
+	var x= profile(getGithubData)
 	document.body.appendChild(x)
 	   
 	   
