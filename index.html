@@ -1,11 +1,11 @@
-// get-github-activity-feed----debug1-t2
+// var getGithubData = require('./index.js')        
 <!doctype html>	
 	<html>
 	  <head>
 	    <meta charset="utf-8">
 	    <script src="https://unpkg.com/npm-require"></script>
           
-               <script src="index.js"></script>
+
 	
 
 	  </head>
@@ -17,7 +17,7 @@
     var bel = require('bel')
     var csjs = require('csjs-inject')
    
-	     var getGithubData = module.exports
+		var getGithubData = require('./index.js')        
     //var url = 'https://api.github.com/repos/wizardamigos/profiles/forks'
     getGithubData(callback)
     function callback (userprofiles) {
